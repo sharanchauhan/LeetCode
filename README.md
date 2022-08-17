@@ -1,1 +1,1 @@
-This repository is for solutions of LeetCode questions Day-Wise.
+This repository is for solutions of questions Day-Wise.
