@@ -1,4 +1,4 @@
-/*
+
 // Definition for a Node.
 class Node {
     int val;
@@ -11,7 +11,6 @@ class Node {
         this.random = null;
     }
 }
-*/
 
 class Solution {
     public Node copyRandomList(Node head) {
