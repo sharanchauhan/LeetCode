@@ -32,7 +32,7 @@ class Main {
 			arr[i] = scn.nextInt();
 		}
 		System.out.println(solution(arr));
-
+		scn.close();
 	}
 
 }

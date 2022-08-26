@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 class Main {
@@ -52,6 +51,7 @@ class Main {
       int freq = ans.get(manager);
       System.out.println(manager+" "+freq);
     }
+    s.close();
   }
 
 }
