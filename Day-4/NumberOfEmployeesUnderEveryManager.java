@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main {
+class Main {
   public static int traverse(HashMap<String,HashSet<String>> tree,String manager,HashMap<String,Integer> ans)
   {
     HashSet<String> empList=tree.get(manager);

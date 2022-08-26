@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+class Main {
 
 	public static int solution(int[] arr) {
 		// write your code here
