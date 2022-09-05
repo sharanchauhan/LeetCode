@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+class Main {
 
     public static int solution(int[] arr) {
         // write your code here
@@ -38,6 +38,7 @@ public class Main {
             arr[i] = scn.nextInt();
         }
         System.out.println(solution(arr));
+        scn.close();
     }
 
 }

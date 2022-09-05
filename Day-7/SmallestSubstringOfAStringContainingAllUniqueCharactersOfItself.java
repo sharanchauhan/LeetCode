@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class SmallestSubstringOfAStringContainingAllUniqueCharactersOfItself {
 
 	public static int solution(String str){
 		HashSet<Character> set=new HashSet<>();
@@ -48,6 +48,7 @@ public class Main {
 		Scanner scn = new Scanner(System.in);
 		String str = scn.next();
 		System.out.println(solution(str));
+		scn.close();
 	}
 
 }
