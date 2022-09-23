@@ -58,3 +58,63 @@ class Solution {
         return result; 
     }
 }
+
+
+// Code for relative
+
+// class Solution {
+//     class Pair {
+//         TreeNode node ;
+//         int lvl;
+//         Pair(TreeNode node, int lvl)
+//         {
+//             this.node = node ;
+//             this.lvl = lvl;
+//         }
+//     }
+//    // idea is to travel eacb node level wise and assign a index which will help to calculate the width at every level
+//    public int widthOfBinaryTree(TreeNode root) {
+//        if (root == null) return 0;
+       
+//        Queue<Pair> qq = new ArrayDeque<>();
+//        qq.add(new Pair(root, 0));
+//        int ans = 0;
+//        while (qq.size()> 0)
+//        {
+//            int size = qq.size();
+//            int min = qq.peek().lvl;
+           
+//            int leftMostNode = 0 ;
+//            for (int i = 0 ; i < size ; i++)
+//            {
+//                Pair rm = qq.remove();
+//                TreeNode rmNode = rm.node;
+               
+//                if(rmNode.left != null)
+//                {
+//                    int leftLvl = (rm.lvl - min) * 2 + 1 ;
+//                    Pair left = new Pair(rmNode.left, leftLvl);
+//                    qq.add(left);
+//                }
+//                if(rmNode.right != null)
+//                {
+//                    int rightLvl = (rm.lvl - min) * 2 + 2 ;
+//                    Pair right = new Pair(rmNode.right, rightLvl);
+//                    qq.add(right);
+//                }
+//                if (i == 0)
+//                {
+//                    leftMostNode = rm.lvl;
+                   
+//                }
+//                if (i == size -1)
+//                {
+//                    int rightMostNode =  rm.lvl;
+//                    int width = (rightMostNode -leftMostNode ) +1;
+//                    ans = Math.max(ans, width);
+//                }
+//            }
+//        }
+//        return ans;
+//    }
+// }
